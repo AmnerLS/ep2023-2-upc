@@ -34,13 +34,11 @@ export class BundleListComponent {
   }
 
   calculateSavings(bundle: Bundle): number {
-    let totalProductPrice = 0;
-    for (let productId of bundle.productsId) {
-      let product = this.productsData.find(product => product.id === productId);
-      if (product) {
-        totalProductPrice += product.price;
-      }
-    }
+
+    const totalProductPrice = this.productsData
+                                                                                                .filter(product => product.bundleId === bundle.id)
+                                                                                                .reduce((acc, product) => acc + product.price, 0);
+
     return totalProductPrice - bundle.price;
   }
 
