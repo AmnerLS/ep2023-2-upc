@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "description": "Description 1",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 10,
+      "bundleId": 1,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "description": "Description 2",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 20,
+      "bundleId": 1,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "description": "Description 3",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 30,
+      "bundleId": 2,
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "description": "Description 4",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 40,
+      "bundleId": 2,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "description": "Description 5",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 50,
+      "bundleId": 3,
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "description": "Description 6",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 60,
+      "bundleId": 3,
+      "rating": 3
+    }
+  ],
+  "bundles": [
+    {
+      "id": 1,
+      "title": "Bundle 1",
+      "description": "Description 1",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 100,
+      "rating": 4,
+      "productsId": [1, 2]
+    },
+    {
+      "id": 2,
+      "title": "Bundle 2",
+      "description": "Description 2",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 200,
+      "rating": 5,
+      "productsId": [3, 4]
+    },
+    {
+      "id": 3,
+      "title": "Bundle 3",
+      "description": "Description 3",
+      "photoUrl": "https://via.placeholder.com/150",
+      "price": 300,
+      "rating": 3,
+      "productsId": [5, 6]
+    }
+  ]
+}
