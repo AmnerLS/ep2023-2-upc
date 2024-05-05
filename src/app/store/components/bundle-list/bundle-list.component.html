@@ -1,0 +1,26 @@
+<div class="card-container">
+  <div *ngFor="let bundle of bundlesData" class="bundles-cards">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{bundle.title}}</mat-card-title>
+        <mat-card-subtitle>{{bundle.rating}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{bundle.photoUrl}}" alt="Photo of bundle" class="bundle-image">
+      <mat-card-content>
+        <p>
+          {{bundle.description}}
+        </p>
+        <p>
+          {{bundle.price | currency:'USD':'symbol'}}
+        </p>
+        <p>
+          You Save: {{calculateSavings(bundle) | currency:'USD':'symbol'}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>
+
+
+
